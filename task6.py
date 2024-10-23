@@ -9,3 +9,12 @@
 # Вывод:
 # 5 3
 
+
+def funk(x, y):
+    m=1
+    for i in range(1,max(x, y)):
+        if x%i==0 and y%i==0:
+            m = i
+
+    return x//m, y//m
+print(funk(int(input()), int(input())))
