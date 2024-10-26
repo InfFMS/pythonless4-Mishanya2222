@@ -10,11 +10,10 @@
 # ********
 # *********
 # **********
+def funk(x)
+    g=0
+    for I in range(1, x):
+        g=g+1
+        print("*"*g)
 
-a = int(input( "введите"))
-g=0
-for I in range(1, a):
-    g=g+1
-    print("*"*g)
-
-    
+print(int(input()))
