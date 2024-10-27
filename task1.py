@@ -16,4 +16,4 @@ def funk(x)
         g=g+1
         print("*"*g)
 
-print(int(input()))
+print(funk(int(input())))
