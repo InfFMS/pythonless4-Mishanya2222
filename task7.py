@@ -7,6 +7,6 @@ def funk(x, y, z):
     if x+y<z and x + z < y and z + y < x:
         a = True
     else:
-        a = Fals
+        a = False
     return a
 print(funk(int(input()), int(input()), int(input())))
