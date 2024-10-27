@@ -4,3 +4,28 @@
 # Пользоваться input()[::-1] запрещено!
 # Идея задачи реализовать алгоритм,
 # который будет работать для любого введенного натурального числа.
+
+# def fuk(x):
+#     t = len(str(x))
+#     g = 0
+#     h = 0
+#     m=0
+#     for i in range(1,t):
+#         g=g+1
+#         h = m + h
+#         m = x%(10**i)
+#         h = m-h
+#         print(m)
+#     return h
+# print(funk(53))
+
+
+
+def funk(x):
+    a = ''
+    t = len(str(x))
+    for i in range(t):
+        g = str(x)[(-i-1)]
+        a = a + g
+    return a
+print(funk(int(input('введите число:'))))
